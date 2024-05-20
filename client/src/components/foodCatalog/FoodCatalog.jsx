@@ -42,8 +42,7 @@ const FoodCatalog = () => {
               <Link to={`/food/${f._id}`} key={f._id} className={classes.food}>
                 <div className={classes.imgContainer}>
                   <img
-                    alt=""
-                    src={`http://localhost:5000/images/${f?.img}`}
+                    src={`https://food-court-0mg9.onrender.com/images/${f?.img}`}
                     className={classes.foodImg}
                   />
                 </div>

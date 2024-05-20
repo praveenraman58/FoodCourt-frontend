@@ -18,11 +18,14 @@ const FoodDetails = () => {
 
   useEffect(() => {
     const fetchFoodDetails = async () => {
-      const res = await fetch(`http://localhost:5000/product/find/${id}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const res = await fetch(
+        `https://food-court-0mg9.onrender.com/product/find/${id}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       const data = await res.json();
       setFoodsDetails(data);
     };
@@ -46,10 +49,7 @@ const FoodDetails = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.left}>
-          <img
-            alt=""
-            src={`http://localhost:5000/images/${foodDetails?.img}`}
-          />
+          <img src={`http://localhost:5000/images/${foodDetails?.img}`} />
         </div>
         <div className={classes.right}>
           <h2 className={classes.title}>{foodDetails?.title}</h2>

@@ -17,13 +17,16 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:5000/auth/login`, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-        body: JSON.stringify({ email, password }),
-      });
+      const res = await fetch(
+        `https://food-court-0mg9.onrender.com/auth/login`,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+          method: "POST",
+          body: JSON.stringify({ email, password }),
+        }
+      );
 
       const data = await res.json();
       console.log(data);
