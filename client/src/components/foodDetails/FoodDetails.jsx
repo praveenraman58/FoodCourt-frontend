@@ -49,7 +49,9 @@ const FoodDetails = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.left}>
-          <img src={`http://localhost:5000/images/${foodDetails?.img}`} />
+          <img
+            src={`https://food-court-0mg9.onrender.com/images/${foodDetails?.img}`}
+          />
         </div>
         <div className={classes.right}>
           <h2 className={classes.title}>{foodDetails?.title}</h2>

@@ -1,0 +1,28 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "D:\\Mern Order Management\\fornt-end\\order-management-frontend\\client"
+publishOrigin = "default"
+base = "D:\\Mern Order Management\\fornt-end\\order-management-frontend\\client"
+command = "npm run build"
+commandOrigin = "heuristics"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
