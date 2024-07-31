@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className={classes.center}>
           <ul className={classes.list}>
             <li className={classes.listItem}>
-              <a href="#home">Home</a>
+              <a href="/">Home</a>
             </li>
             <li className={classes.listItem}>
               <a href="#contacts">Contacts</a>

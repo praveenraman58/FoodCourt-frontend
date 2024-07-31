@@ -38,7 +38,7 @@ const Cart = () => {
                   <AiOutlineClose />
                 </div>
                 <img
-                  src={`https://food-court-0mg9.onrender.com/images/${product.img}`}
+                  src={`http://localhost:5000/images/${product.img}`}
                   className={classes.img}
                 />
                 <div className={classes.productData}>

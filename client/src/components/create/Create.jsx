@@ -35,19 +35,21 @@ const Create = () => {
         formData.append("filename", filename);
         formData.append("image", image);
 
-        await fetch(`https://food-court-0mg9.onrender.com/upload/image`, {
+        await fetch(`http://localhost:5000/upload/image`, {
           headers: {
             Authorization: `Bearer ${token}`,
+            isAdmin: `true`,
           },
           method: "POST",
           body: formData,
         });
       }
 
-      const res = await fetch(`https://food-court-0mg9.onrender.com/product`, {
+      const res = await fetch(`http://localhost:5000/product`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
+          isAdmin: `true`,
         },
         method: "POST",
         body: JSON.stringify({

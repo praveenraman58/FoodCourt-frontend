@@ -14,7 +14,7 @@ const FoodCatalog = () => {
   useEffect(() => {
     const fetchFoodType = async () => {
       const res = await fetch(
-        `https://food-court-0mg9.onrender.com/product?category=${foodEndpoint}`,
+        `http://localhost:5000/product?category=${foodEndpoint}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -42,7 +42,7 @@ const FoodCatalog = () => {
               <Link to={`/food/${f._id}`} key={f._id} className={classes.food}>
                 <div className={classes.imgContainer}>
                   <img
-                    src={`https://food-court-0mg9.onrender.com/images/${f?.img}`}
+                    src={`http://localhost:5000/images/${f?.img}`}
                     className={classes.foodImg}
                   />
                 </div>
